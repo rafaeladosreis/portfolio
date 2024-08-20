@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafaela dos Reis</title>
+    <style>
+        /* Importa fontes do Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&display=swap');
+
+        /* Estilo geral do corpo da página */
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            line-height: 1.6;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #778891;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo dos links no menu de navegação */
+        nav a {
+            color: #f8f9fa;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        /* Estilo dos links ao passar o mouse */
+        nav a:hover {
+            color: #adb5bd;
+        }
+
+        /* Faz com que o scroll seja suave */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Estilo para o título principal */
+        h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            color: #ffffff;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+            background: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm55eGhzYWkzdzE1Ym96cWY3bHZ2aHJ2aW51NHViN2w1OG1veXYyaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1nbweFkb6kqVhNCwJ4/giphy.webp') no-repeat center center;
+            background-size: cover;
+            border-radius: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 50px;
+        }
+
+        /* Estilo para os subtítulos */
+        h2 {
+            font-family: 'Lobster', cursive;
+            font-size: 2rem;
+            margin: 20px 0;
+            color: #495057;
+            text-align: center;
+        }
+
+        /* Estilo dos parágrafos */
+        p {
+            max-width: 800px;
+            margin: 10px auto;
+            margin-bottom: 60px;
+            padding: 0 20px;
+            text-align: justify;
+        }
+
+        /* Estilo da área principal do conteúdo */
+        main {
+            background-color: #ffffff;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo do menu dentro do conteúdo */
+        .menu {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Estilo das listas não ordenadas */
+        ul {
+            list-style-type: disc;
+            padding-left: 120px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+
+        /* Estilo dos itens da lista */
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        /* Estilo das imagens */
+        img {
+            display: block;
+            margin: 30px auto;
+            max-width: 25%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo dos links em geral */
+        a {
+            color: #6c757d;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        /* Estilo dos links ao passar o mouse */
+        a:hover {
+            color: #495057;
+        }
+
+        /* Estilo dos formulários */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Estilo dos rótulos dos campos do formulário */
+        label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        /* Estilo dos campos de entrada e áreas de texto */
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #495057;
+            background-color: #f8f9fa;
+            transition: border-color 0.3s ease;
+        }
+
+        /* Estilo do botão */
+        button {
+            background-color: #6c757d;
+            color: #f8f9fa;
+            padding: 15px;
+            border: none;
+            width: 105%;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilo do botão ao passar o mouse */
+        button:hover {
+            background-color: #5a6268;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #778891;
+            height: 10px;
+            padding: 10px 0px 15px 160px;
+            text-align: center;
+            color: white;
+            width: 92%;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Estilo do parágrafo dentro do rodapé */
+        footer > p {
+            
+            line-height: 0;
+            font-size: 14px;
+        }
+
+        /* Estilo da linha horizontal */
+        hr {
+            width: 80%;
+            border: none;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.103);
+            margin: 40px auto;
+        }
+
+        /* Estilo dos títulos dentro da seção de projetos */
+        .apps > h3 {
+            text-align: center;
+        }
+
+        /* Estilo dos links dentro da seção de projetos */
+        .apps > a {
+            display: flex;
+            justify-content: center;
+            margin-top: -50px;
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Menu de navegação -->
+        <nav>
+            <a href="#sobre-mim">Sobre mim</a>
+            <a href="#formacao-cursos">Formação e Cursos</a>
+            <a href="#projetos">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção sobre mim -->
+        <div class="menu" id="sobre-mim">
+            <h1>Rafaela dos Reis Pinto</h1>
+            <h2>Sobre mim</h2>
+            <p>Olá! Sou Rafaela, estudante de Análise e Desenvolvimento de Sistemas na Uninter, e estou me especializando como desenvolvedora front-end. Minha paixão por tecnologia é o que me move e me inspira todos os dias. Adoro estudar e, no meu tempo livre, estou sempre aprendendo algo novo para me manter atualizada e aprimorar minhas habilidades.</p>
+        </div>
+
+        <hr>
+
+        <!-- Seção de formação e cursos -->
+        <div id="formacao-cursos">
+            <h2>Formação e Cursos</h2>
+            <ul>
+                <li>Graduação em Análise e Desenvolvimento de Sistemas - Uninter (Em andamento)</li>
+                <li>Curso de Excel 2016 - CIEE</li>
+                <li>Curso de Inglês na Udemy (Nível básico)</li>
+                <li>Conhecimento em HTML, CSS e Figma</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Seção de projetos -->
+        <div class="apps" id="projetos">
+            <h2>Projetos</h2>
+            <img src="Figma.png.webp" alt="Protótipo App do Ifood">
+            <h3>Protótipo (App do Ifood)</h3>
+            <p>Este protótipo foi criado por mim em um trabalho da faculdade, no intuito de ser bem organizado e criativo com diversas funcionalidades.</p>
+            <a href="https://www.figma.com/design/nFigYgjwqONavF6OKQtmnD/Trabalho?node-id=0-1&t=RCjczmDAPp46Mcy2-1" target="_blank">Ver Projeto</a>
+        </div>
+
+        <hr>
+
+        <!-- Seção de contato -->
+        <div id="contato">
+            <h2>Contato</h2>
+            <form method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 Rafaela dos Reis Pinto - RU 4538818</p>
+    </footer>
+</body>
+</html>
